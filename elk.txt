@@ -1,0 +1,166 @@
+    1  sudo apt-update
+    2  sudo apt-get upgrade -y
+    3  sudo apt update
+    4  sudo apt install openjdk-8-jdk
+    5  history
+    6  java -version
+    7  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.1-amd64.deb
+    8  ls -lrt
+    9  clear
+   10  ls -lrt
+   11  sudo dpkg -i elasticsearch-7.8.1-amd64.deb 
+   12  vi /etc/elasticsearch/elasticsearch.yml 
+   13  systemctl enable elasticsearch.service
+   14  systemctl start elasticsearch.service
+   15  systemctl status elasticsearch.service
+   16  vi /etc/elasticsearch/elasticsearch.yml 
+   17  systemctl start elasticsearch.service
+   18  vi /etc/elasticsearch/elasticsearch.yml 
+   19  systemctl start elasticsearch.service
+   20  cd /etc/init.d/
+   21  ls -lrt
+   22  nohup ./elasticsearch &
+   23  tail -f nohup.out 
+   24  nohup ./elasticsearch start &
+   25  tail -f nohup.out 
+   26  cd /home/august110511/
+   27  ls -lrt
+   28  cd /etc/elasticsearch/
+   29  vi elasticsearch.yml 
+   30  systemctl start elasticsearch.service
+   31  systemctl status elasticsearch.service
+   32  vi elasticsearch.yml 
+   33  vi /etc/elasticsearch/elasticsearch.yml 
+   34  systemctl start elasticsearch.service
+   35  systemctl status elasticsearch.service
+   36  curl -X GET "localhost:9200"
+   37  ifconfig
+   38  cd ../..
+   39  pwd
+   40  cd ~
+   41  cd /home/august110511/
+   42  wget https://artifacts.elastic.co/downloads/kibana/kibana-7.8.1-amd64.deb
+   43  sudo dpkg -i kibana-7.8.1-amd64.deb 
+   44  vi /etc/kibana/kibana.yml 
+   45  sudo sysctl -w vm.max_map_count=262144
+   46  sudo systemctl enable kibana.service
+   47  sudo systemctl start kibana.service
+   48  sudo systemctl status kibana.service
+   49  vi /etc/kibana/kibana.yml 
+   50  sudo systemctl restart kibana.service
+   51  sudo systemctl status kibana.service
+   52  vi /etc/kibana/kibana.yml 
+   53  sudo systemctl restart kibana.service
+   54  sudo systemctl status kibana.service
+   55  vi /etc/kibana/kibana.yml 
+   56  sudo systemctl restart kibana.service
+   57  sudo systemctl status kibana.service
+   58  vi /etc/kibana/kibana.yml 
+   59  sudo systemctl restart kibana.service
+   60  sudo systemctl status kibana.service
+   61  vi /etc/kibana/kibana.yml 
+   62  sudo systemctl restart kibana.service
+   63  sudo systemctl status kibana.service
+   64  vi /etc/kibana/kibana.yml 
+   65  ifconfig
+   66  hostname
+   67  ping elkdemo
+   68  nslookup elkdemo
+   69  vi /etc/kibana/kibana.yml 
+   70  sudo systemctl restart kibana.service
+   71  sudo systemctl status kibana.service
+   72  vi /etc/kibana/kibana.yml 
+   73  sudo systemctl restart kibana.service
+   74  sudo systemctl status kibana.service
+   75  curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.8.1-amd64.deb
+   76  sudo dpkg -i filebeat-7.8.1-amd64.deb
+   77  clear
+   78  vi /etc/filebeat/filebeat.yml
+   79  sudo filebeat modules enable elasticsearch
+   80  sudo filebeat setup
+   81  yum install ansible
+   82  apt install yum
+   83  yum install ansible
+   84  apt install ansible
+   85  ansible --version
+   86  ssh-keygen
+   87  ssh-copy-id root@10.128.0.3
+   88  vi /root/.ssh/id_rsa.pub
+   89  ssh root@10.128.0.3
+   90  vi /etc/ssh/sshd_config 
+   91  ssh root@10.128.0.3
+   92  ssh ansible@10.128.0.3
+   93  ssh-copy-id ansible@10.128.0.3
+   94  cd /etc/elasticsearch/
+   95  vi elasticsearch.yml 
+   96  vi /etc/kibana/kibana.yml 
+   97  service restart kibana
+   98  servive kibana restart
+   99  systemctl kibana restart
+  100  history |grep kibana
+  101  sudo systemctl restart kibana.service
+  102  vi /etc/kibana/kibana.yml 
+  103  sudo systemctl restart kibana.service
+  104  sudo systemctl status kibana.service
+  105  vi /etc/kibana/kibana.yml 
+  106  sudo systemctl restart kibana.service
+  107  sudo systemctl status kibana.service
+  108  vi /etc/elasticsearch/elasticsearch.yml 
+  109  cd ..
+  110  ls -lrt
+  111  cd elasticsearch/
+  112  ls -lrt
+  113  cd /usr/bin/
+  114  ls -lrt
+  115  ps -ef 
+  116  ps -ef |grep elasticsearch
+  117  cd /usr/share/elasticsearch
+  118  ls -lrt
+  119  cd bin/
+  120  cd ..
+  121  ./bin/elasticsearch-setup-passwords interactive
+  122  history |grep elasticsearch
+  123  systemctl restart elasticsearch.service
+  124  ./bin/elasticsearch-setup-passwords interactive
+  125  vi /etc/kibana/kibana.yml 
+  126  sudo systemctl restart kibana.service
+  127  sudo systemctl status kibana.service
+  128  vi /etc/kibana/kibana.yml 
+  129  sudo systemctl restart kibana.service
+  130  apt install git
+  131  git config
+  132  git config --local
+  133  ssh-keygen
+  134  vi /root/.ssh/id_rsa.pub
+  135  git init
+  136  git remote add origin git@github.com:adavitsharma/elastic.git
+  137  ls -lrt
+  138  cd /etc/elasticsearch/
+  139  git add elasticsearch.yml 
+  140  git init
+  141  git add elasticsearch.yml 
+  142  git commit -m " Userrole" 
+  143  git config --global --user abhishek
+  144  git config --global user.name Abhishek
+  145  git config --global user.email abhishek.msharma@yahoo.in
+  146  git status
+  147  git add elasticsearch.yml 
+  148  git commit -m " elk role" 
+  149  git commit -m " elk role" elasticsearch.yml 
+  150  ls -lrt
+  151  git push elasticsearch.yml 
+  152  git remote add origin git@github.com:adavitsharma/elastic.git
+  153  git status
+  154  git add .
+  155  git commit -m "elk role"
+  156  git push .
+  157  git push -u origin maste
+  158  git config --global push.default matching
+  159  git push all
+  160  git remote add origin git@github.com:adavitsharma/elastic.git
+  161  git push -u origin master
+  162  cp -r /etc/kibana/kibana.yml .
+  163  git add kibana.yml 
+  164  git commit -m "Kibana" 
+  165  git push 
+  166  history >>elk.txt
